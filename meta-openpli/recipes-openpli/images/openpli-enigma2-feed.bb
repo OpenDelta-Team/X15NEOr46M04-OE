@@ -209,7 +209,7 @@ OPTIONAL_ENIGMA2_PACKAGES = " \
 	enigma2-plugin-extensions-modifyplifullhd \
 	enigma2-plugin-extensions-moviemanager \
 	enigma2-plugin-extensions-openmultiboot \
-	enigma2-plugin-extensions-pluto \
+	enigma2-plugin-extensions-plutotv \
 	enigma2-plugin-extensions-refreshbouquet \
 	enigma2-plugin-extensions-sdgradio \
 	enigma2-plugin-extensions-serienrecorder \
