@@ -24,6 +24,7 @@ SRC_URI += "http://downloads.openpli.org/archive/xp/linux-${PV}-${ARCH}.tar.gz;n
 	file://fix-multiple-defs-yyloc.patch \
 	file://fix-never-be-null_outside-array-bounds-gcc-12.patch \
 	file://fix-build-with-binutils-2.41.patch \
+	file://noforce_correct_pointer_usage.patch \
 	"
 
 S = "${WORKDIR}/linux-${PV}"
