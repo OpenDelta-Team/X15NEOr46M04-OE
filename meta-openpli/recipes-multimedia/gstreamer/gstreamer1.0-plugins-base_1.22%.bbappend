@@ -2,9 +2,9 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 RDEPENDS:libgstgl-1.0 = "libGLESv2.so"
 
-PV = "1.26.5"
+PV = "1.26.8"
 
-SRC_URI[sha256sum] = "f0c0e26cbedaa57732cb6a578e8cc13a1164bf18d737d55c333061c52f0c48d7"
+SRC_URI[sha256sum] = "513cace4b02cb183ee47665d64bb2a25088abb6678c4cc57bb100b841add746b"
 
 SRC_URI:append = " file://001-riff-media-added-fourcc-to-all-ffmpeg-mpeg4-video-caps.patch \
                    file://002-subparse-avoid-false-negatives-dealing-with-UTF-8.patch \
