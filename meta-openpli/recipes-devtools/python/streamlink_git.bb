@@ -33,6 +33,7 @@ SRCREV_FORMAT = "streamlink_plugins"
 
 SRC_URI = " git://github.com/streamlink/streamlink;protocol=https;branch=master \
 			git://github.com/oe-mirrors/streamlink-plugins;protocol=https;branch=master;name=plugins;destsuffix=additional-plugins \
+			file://new_youtube.py \
 "
 
 S = "${WORKDIR}/git"
@@ -43,6 +44,10 @@ do_unpack_append() {
 
 do_prepare_plugins_dir() {
 	cp -f ${WORKDIR}/additional-plugins/*.py ${S}/src/streamlink/plugins
+}
+
+do_install_prepend() {
+	cp -f ${WORKDIR}/new_youtube.py ${S}/src/streamlink/plugins/youtube.py
 }
 
 do_install_append() {
