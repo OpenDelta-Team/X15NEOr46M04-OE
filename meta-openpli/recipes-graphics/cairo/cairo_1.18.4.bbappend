@@ -1,7 +1,7 @@
-FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
+# FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-SRC_URI:append = " file://0001-Reinstate-cairo-directfd.patch"
+# SRC_URI:append = " file://0001-Reinstate-cairo-directfd.patch"
 
-PACKAGECONFIG:append = " directfb"
+# PACKAGECONFIG:append = " directfb"
 
-PACKAGECONFIG[directfb] = "-Ddirectfb=enabled,-Ddirectfb=disabled,directfb"
+# PACKAGECONFIG[directfb] = "-Ddirectfb=enabled,-Ddirectfb=disabled,directfb"
