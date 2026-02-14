@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 PROVIDES += "gb-bluetooth-util"
 RPROVIDES:${PN} += "gb-bluetooth-util"
 
-PR="${SRCDATE}.${SRCDATE_PR}"
+PR = "${SRCDATE}.${SRCDATE_PR}"
 
 SRC_URI = " \
     http://downloads.openpli.org/archive/gigablue/gb-bluetooth-util-gb7252-${PR}.tar.gz \

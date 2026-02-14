@@ -1,9 +1,9 @@
 SRCDATE = "20250623r0"
 
-BOLT_DATE="2025-06-23"
-BOLT_VERSION="2525"
-BOLT_MD5SUM="7ed40d94e8e033fd9c468cba16772434"
-BOLT_DEVICE="/dev/mtdblock0"
+BOLT_DATE = "2025-06-23"
+BOLT_VERSION = "2525"
+BOLT_MD5SUM = "7ed40d94e8e033fd9c468cba16772434"
+BOLT_DEVICE = "/dev/mtdblock0"
 
 require gigablue-bootloader.inc
 

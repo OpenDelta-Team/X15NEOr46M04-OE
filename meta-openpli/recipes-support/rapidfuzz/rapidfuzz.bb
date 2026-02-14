@@ -4,7 +4,7 @@ LIC_FILES_CHKSUM = "file://${S}/README.md;md5=27dfcf671b87cc14bedf9a479247c1fe"
 
 DEPENDS = "python3-cython-native"
 
-SRC_URI="git://github.com/rapidfuzz/rapidfuzz;branch=main;protocol=https"
+SRC_URI = "git://github.com/rapidfuzz/rapidfuzz;branch=main;protocol=https"
 
 S = "${WORKDIR}/git"
 

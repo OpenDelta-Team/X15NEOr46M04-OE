@@ -17,7 +17,7 @@ PARALLEL_MAKE = ""
 SRC_URI = "git://github.com/amiri82/djmount.git;protocol=https;branch=main"
 
 
-SRC_URI:append =" \
+SRC_URI:append = " \
 	file://init \
 	file://02-djmount.1.patch \
 	file://03-support-fstab-mounting.patch \

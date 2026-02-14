@@ -2,7 +2,7 @@ SECTION = "base"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 LICENSE = "CLOSED"
 
-PR="${SRCDATE}.${SRCDATE_PR}"
+PR = "${SRCDATE}.${SRCDATE_PR}"
 
 PROVIDES = "virtual/libgles2 virtual/egl"
 

@@ -2,7 +2,7 @@ SUMMARY  = "Library to access Blu-Ray disk"
 SECTION = "misc"
 HOMEPAGE = "http://videolan.org"
 LICENSE = "GPL-2.0-only"
-LIC_FILES_CHKSUM="file://COPYING;md5=435ed639f84d4585d93824e7da3d85da"
+LIC_FILES_CHKSUM = "file://COPYING;md5=435ed639f84d4585d93824e7da3d85da"
 
 DEPENDS = "freetype fontconfig libxml2 libudfread"
 
@@ -15,7 +15,7 @@ inherit gittag meson pkgconfig
 PV = "git"
 PKGV = "${GITPKGVTAG}"
 
-S="${WORKDIR}/git"
+S = "${WORKDIR}/git"
 
 EXTRA_OECONF = " \
     --disable-bdjava-jar \

@@ -7,4 +7,4 @@ require openplugins-replace-pli.inc
 
 require openplugins-distutils.inc
 
-PR="r0"
+PR = "r0"

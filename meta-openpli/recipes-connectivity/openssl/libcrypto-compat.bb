@@ -8,7 +8,7 @@ SECTION = "libs/network"
 LICENSE = "OpenSSL"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=f475368924827d06d4b416111c8bdb77"
 
-PV="1.0.2u"
+PV = "1.0.2u"
 
 DEPENDS = "hostperl-runtime-native"
 DEPENDS:append:class-target = " openssl-native"
@@ -243,7 +243,7 @@ FILES:${PN} =+ "${libdir}/ssl/*"
 BBCLASSEXTEND = "native nativesdk"
 PACKAGE_PREPROCESS_FUNCS += "openssl_package_preprocess"
 
-RPROVIDES:${PN} ="libcrypto-compat"
+RPROVIDES:${PN} = "libcrypto-compat"
 
 PROVIDES += "libcrypto-compat"
 

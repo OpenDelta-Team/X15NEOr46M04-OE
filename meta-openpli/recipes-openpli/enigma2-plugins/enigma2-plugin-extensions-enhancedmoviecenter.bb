@@ -13,8 +13,8 @@ SRCREV = "${AUTOREV}"
 PV = "4.0.+git"
 PKGV = "4.0.+git${GITPKGV}"
 
-SRC_URI="git://github.com/oe-mirrors/EnhancedMovieCenter.git;branch=master;protocol=https \
-         file://set-shebang-to-python3.patch \
+SRC_URI = "git://github.com/oe-mirrors/EnhancedMovieCenter.git;branch=master;protocol=https \
+           file://set-shebang-to-python3.patch \
 "
 
 S = "${WORKDIR}/git"

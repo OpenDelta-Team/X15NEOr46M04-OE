@@ -5,7 +5,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 PV = "1.0"
 PR = "r0"
 
-SRC_URI="file://createswap.sh"
+SRC_URI = "file://createswap.sh"
 
 do_install() {
     install -d ${D}${sysconfdir}/init.d

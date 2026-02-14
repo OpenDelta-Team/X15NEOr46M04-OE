@@ -215,7 +215,7 @@ EXTRA_OECMAKE = " \
     -Dapache-commons-text_SOURCE_DIR=${WORKDIR}/commons-text-${PV_commons-text} \
 "
 
-# OECMAKE_GENERATOR="Unix Makefiles"
+# OECMAKE_GENERATOR = "Unix Makefiles"
 # PARALLEL_MAKE = " "
 
 FULL_OPTIMIZATION:armv7a = "-fomit-frame-pointer -O3 -ffast-math"

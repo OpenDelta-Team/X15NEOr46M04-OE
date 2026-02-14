@@ -5,19 +5,19 @@ LICENSE = "CLOSED"
 PROVIDES += "vuplus-wifi-util"
 RPROVIDES:${PN} += "vuplus-wifi-util"
 
-PR="${SRCDATE}.${SRCDATE_PR}"
+PR = "${SRCDATE}.${SRCDATE_PR}"
 
 SRC_URI = " \
     http://downloads.openpli.org/archive/vuplus/vuplus-wifi-util-${MACHINE}-${PV}-${SRCDATE}.${SRCDATE_PR}.tar.gz \
 "
 
-S="${WORKDIR}/vuplus-wifi-util-${MACHINE}"
+S = "${WORKDIR}/vuplus-wifi-util-${MACHINE}"
 
 do_package_qa() {
 }
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
-FILES:${PN}="/"
+FILES:${PN} = "/"
 
 do_install() {
 	install -d ${D}${bindir}

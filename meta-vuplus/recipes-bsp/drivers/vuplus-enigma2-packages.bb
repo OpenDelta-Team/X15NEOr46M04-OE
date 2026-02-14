@@ -63,4 +63,4 @@ PACKAGES = "\
 	enigma2-plugin-systemplugins-ledbrightnesssetup \
 	"
 
-PROVIDES="${PACKAGES}"
+PROVIDES = "${PACKAGES}"

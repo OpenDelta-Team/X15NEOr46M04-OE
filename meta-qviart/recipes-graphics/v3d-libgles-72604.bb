@@ -2,7 +2,7 @@ require v3d-libgles-qviart.inc
 
 SRCDATE = "20190218"
 SRCDATE_PR = "r0"
-PV="16.1"
+PV = "16.1"
 
 COMPATABLE_MACHINE = "^(lunix4k)$"
 

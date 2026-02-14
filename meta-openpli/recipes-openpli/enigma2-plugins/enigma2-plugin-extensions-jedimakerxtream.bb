@@ -5,7 +5,7 @@ HOMEPAGE = "https://github.com/kiddac/Jedi_Maker_Xtream"
 
 inherit gittag allarch python3-compileall
 
-SRCREV="${AUTOREV}"
+SRCREV = "${AUTOREV}"
 
 PV = "git"
 PKGV = "${GITPKGVTAG}"

@@ -1,6 +1,6 @@
 MGCAMVER = "135a"
 
-PV="1.35a"
+PV = "1.35a"
 
 require mgcamd.inc
 

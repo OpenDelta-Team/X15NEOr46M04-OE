@@ -9,7 +9,7 @@ RPROVIDES:${PN} += "swapcreate-${CHIP}"
 PV = "1.0"
 PR = "r1"
 
-SRC_URI="file://createswap.sh"
+SRC_URI = "file://createswap.sh"
 
 do_install() {
     install -d ${D}${sysconfdir}/init.d

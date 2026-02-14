@@ -2,7 +2,7 @@ DESCIPTION = "S3 cold boot"
 MAINTAINER = "vuplus team"
 LICENSE = "CLOSED"
 
-SRCDATE="20140925_p0"
+SRCDATE = "20140925_p0"
 
 PV = "1.0"
 PR = "${SRCDATE}_r1"

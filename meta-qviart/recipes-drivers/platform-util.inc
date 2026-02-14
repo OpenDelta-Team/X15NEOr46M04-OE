@@ -6,7 +6,7 @@ SRC_URI = " \
     file://${INITSCRIPT_NAME}.sysvinit \
 "
 
-S="${WORKDIR}"
+S = "${WORKDIR}"
 
 do_install() {
     install -d ${D}${bindir}
@@ -18,7 +18,7 @@ do_install() {
 do_package_qa[noexec] = "1"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
-FILES:${PN}="/"
+FILES:${PN} = "/"
 
 inherit update-rc.d
 

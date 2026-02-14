@@ -5,8 +5,8 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 PROVIDES = "virtual/libgles2 virtual/egl"
 RPROVIDES:${PN} = "libEGL.so libGLESv2.so libdvb_base.so libdvb_client.so libnxpl.so libv3ddriver.so"
 
-PV="15.1"
-PR="${SRCDATE}.${SRCDATE_PR}"
+PV = "15.1"
+PR = "${SRCDATE}.${SRCDATE_PR}"
 
 S = "${WORKDIR}/libgles-${MACHINE}"
 
