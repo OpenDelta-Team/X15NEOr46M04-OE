@@ -7,6 +7,7 @@ Subject: [PATCH] Reinstate-cairo-directfd
  boilerplate/cairo-boilerplate-directfb.c | 235 ++++++++++
  boilerplate/meson.build                  |   1 +
  meson.build                              |  14 +
+ meson_options                        |   1 +
  src/cairo-directfb-surface.c             | 545 +++++++++++++++++++++++
  src/cairo-directfb.h                     |  67 +++
  src/meson.build                          |   7 +
@@ -300,6 +301,18 @@ index 9100152..233ec52 100644
          }, section: 'Surface Backends', bool_yn: true)
  
  summary({
+diff --git a/meson.options b/meson.options
+index f481ef3ea..830e348b2 100644
+--- a/meson.options
++++ b/meson.options
+@@ -4,6 +4,7 @@ option('fontconfig', type : 'feature', value : 'auto')
+ option('freetype', type : 'feature', value : 'auto')
+
+ # Cairo surface backends
++option('directfb', type : 'feature', value : 'disabled')
+ option('png', type : 'feature', value : 'auto') # png and svg surfaces
+ option('quartz', type : 'feature', value : 'auto')
+ option('tee', type : 'feature', value : 'auto')
 diff --git a/src/cairo-directfb-surface.c b/src/cairo-directfb-surface.c
 new file mode 100644
 index 000000000..0deedf0d5
