@@ -9,3 +9,5 @@ PV = "1.0+git"
 PKGV = "1.0+git${GITPKGV}"
 
 SRC_URI = "git://github.com/OpenPLi/${BPN}.git;protocol=https;branch=master"
+
+CFLAGS += "-Wno-error=implicit-function-declaration"
