@@ -18,5 +18,3 @@ do_install() {
 }
 
 FILES:${PN} = "${bindir}/replex"
-
-ERROR_QA:remove = "buildpaths"

@@ -151,5 +151,3 @@ rm -f ${datadir}/enigma2/logos/ustym4k*.png
 
 exit 0
 }
-
-ERROR_QA:remove = "buildpaths"

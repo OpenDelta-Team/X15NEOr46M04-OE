@@ -25,5 +25,3 @@ EXTRA_OECONF = "--with-boxtype=generic --with-configdir=/etc \
 	"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
-
-ERROR_QA:remove = "buildpaths"

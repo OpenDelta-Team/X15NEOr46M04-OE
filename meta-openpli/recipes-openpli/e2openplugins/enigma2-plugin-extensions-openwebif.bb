@@ -55,5 +55,3 @@ DESCRIPTION:${PN}-vxg = "Adds Google Chrome support to OpenWebif's WebTV"
 FILES:${PN}-vxg = "${libdir}/enigma2/python/Plugins/Extensions/OpenWebif/public/vxg"
 RDEPENDS:${PN}-vxg =+ "${PN}"
 PACKAGES =+ "${PN}-vxg"
-
-ERROR_QA:remove = "buildpaths"
