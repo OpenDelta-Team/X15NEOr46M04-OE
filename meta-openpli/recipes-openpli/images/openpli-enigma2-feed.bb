@@ -68,6 +68,7 @@ OPTIONAL_PACKAGES += " \
 	ctorrent \
 	cups \
 	diffutils \
+	djmount \
 	dosfstools \
 	dvb-apps \
 	dvblast \

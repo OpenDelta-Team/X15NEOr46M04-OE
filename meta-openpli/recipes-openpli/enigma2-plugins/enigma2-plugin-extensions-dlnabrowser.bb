@@ -13,9 +13,9 @@ inherit gitpkgv python3native
 PV = "git"
 PKGV = "git${GITPKGV}"
 
-DEPENDS = "fuse libupnp"
+DEPENDS = "djmount fuse libupnp"
 PROVIDES = "enigma2-plugin-systemplugins-dlnabrowser"
-RDEPENDS:${PN} = "fuse-utils fuse libupnp"
+RDEPENDS:${PN} = "djmount fuse-utils fuse libupnp"
 RRECOMMENDS:${PN} = "kernel-module-fuse"
 FILES:${PN} = "${libdir}/enigma2/python/Plugins/Extensions/DLNABrowser/*"
 PACKAGES = "${PN}"
