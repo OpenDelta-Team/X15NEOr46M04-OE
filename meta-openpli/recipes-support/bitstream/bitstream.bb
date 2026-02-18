@@ -21,7 +21,10 @@ do_compile:prepend() {
 	sed -i 's#/usr/local#/usr#' ${S}/Makefile
 }
 
-do_install:append() {
+do_install() {
+	cd ${S}
+	oe_runmake 'DESTDIR=${D}' install
+	install -d ${D}${includedir}
 	install -d ${D}${includedir}
 }
 
