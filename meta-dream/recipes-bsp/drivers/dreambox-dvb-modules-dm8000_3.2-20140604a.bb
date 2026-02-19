@@ -14,6 +14,8 @@ SRC_URI = " \
 
 inherit module-base
 
+S = "${UNPACKDIR}"
+
 do_compile() {
 }
 
