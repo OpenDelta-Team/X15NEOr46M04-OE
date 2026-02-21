@@ -100,7 +100,6 @@ OPTIONAL_PACKAGES += " \
 	mc \
 	mediainfo \
 	pv \
-	minisatip \
 	mpd \
 	mtd-utils \
 	mtr \
