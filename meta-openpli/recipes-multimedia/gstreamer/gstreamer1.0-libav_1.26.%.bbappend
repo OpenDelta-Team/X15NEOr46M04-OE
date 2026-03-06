@@ -1,3 +1,3 @@
-PV = "1.26.10"
+PV = "1.28.1"
 
-SRC_URI[sha256sum] = "c8c2fd29cc063a6d26c314cd1a0a3a3060c8a029981b9520fab52c4206d11611"
+SRC_URI[sha256sum] = "bfa91aaca38d0fd8addcdd559e35b7541e3f32a5f410194ec4ba18040defee9b"
