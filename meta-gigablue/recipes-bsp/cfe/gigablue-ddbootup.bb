@@ -16,7 +16,7 @@ do_install() {
     install -d ${D}${sysconfdir}/init.d
     install -d ${D}${sysconfdir}/rcS.d
     echo '#! /bin/sh' > ${UNPACKDIR}/ddbootup
-    ${@bb.utils.contains("MACHINE_FEATURES", "gigabluelcd", "echo 'echo 1 > /proc/stb/lcd/mode' >> ${WORKDIR}/ddbootup" , "", d)}
+    ${@bb.utils.contains("MACHINE_FEATURES", "gigabluelcd", "echo 'echo 1 > /proc/stb/lcd/mode' >> ${UNPACKDIR}/ddbootup" , "", d)}
     echo 'touch /dev/dbox/lcd0' >> ${UNPACKDIR}/ddbootup
     echo 'echo ${MACHINE} > /proc/stb/info/gbmodel' >> ${UNPACKDIR}/ddbootup
     install -m 0755 ${UNPACKDIR}/ddbootup ${D}${sysconfdir}/init.d
