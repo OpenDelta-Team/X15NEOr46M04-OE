@@ -20,6 +20,9 @@ EXTRA_OEMAKE_append = " \
 
 MAKE_TARGETS = "module"
 
+# make sure we have a kernel version
+KERNEL_VERSION = "${@get_kernelversion_headers('${STAGING_KERNEL_DIR}') or oe.utils.read_file('${STAGING_KERNEL_BUILDDIR}/kernel-abiversion') or oe.utils.read_file('${PKGDATA_DIR}/kernel-depmod/kernel-abiversion')}"
+
 RRECOMMENDS_${PN} = "kernel-module-xt-hashlimit"
 RPROVIDES_${PN} = "${@ 'kernel-module-wireguard' if ("${KERNEL_VERSION}" and bb.utils.vercmp_string("${KERNEL_VERSION}", '5.6') < 0) else '' }"
 MODULE_NAME = "wireguard"
