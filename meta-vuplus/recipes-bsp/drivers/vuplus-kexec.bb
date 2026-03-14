@@ -11,6 +11,8 @@ SRC_URI = " \
 	file://STARTUP_cpio.bin \
 "
 
+S = "${UNPACKDIR}"
+
 do_install() {
 	install -d ${D}${bindir}
 	install -m 0755 ${UNPACKDIR}/kernel_auto.bin ${D}${bindir}/kernel_auto.bin
