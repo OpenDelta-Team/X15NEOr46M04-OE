@@ -12,6 +12,8 @@ SRC_URI = " \
 
 DEPENDS:append = " update-rc.d-native"
 
+S = "${UNPACKDIR}"
+
 do_install() {
         install -d ${D}${sysconfdir}/init.d/
 	install -d ${D}${sysconfdir}/rc0.d
