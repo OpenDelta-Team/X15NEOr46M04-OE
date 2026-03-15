@@ -83,12 +83,11 @@ EXTRA_OEMAKE = "${@bb.utils.contains('PACKAGECONFIG', 'manpages', '', 'OE_DISABL
 
 export OE_LDFLAGS = "${LDFLAGS}"
 
-TERMIO ?= "-DTERMIO"
-TERMIO:libc-musl = "-DTERMIOS"
+TERMIO ?= "-DTERMIOS"
 EXTRA_OECONF:append:libc-musl:powerpc64 = " no-asm"
 
 CFLAG = "${@oe.utils.conditional('SITEINFO_ENDIANNESS', 'le', '-DL_ENDIAN', '-DB_ENDIAN', d)} \
-         ${TERMIO} ${CFLAGS} -Wall"
+         ${TERMIOS} ${CFLAGS} -Wall"
 
 # Avoid binaries being marked as requiring an executable stack since they don't
 # (and it causes issues with SELinux)

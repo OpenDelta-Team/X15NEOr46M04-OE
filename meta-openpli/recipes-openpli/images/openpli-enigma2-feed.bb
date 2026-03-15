@@ -254,6 +254,7 @@ OPTIONAL_ENIGMA2_PACKAGES = " \
 	${@bb.utils.contains('EXTRA_IMAGEDEPENDS', 'vuplus-tuner-turbo2', 'enigma2-plugin-drivers-dvb-usb-turbo2', '', d)} \
 	\
 	${@bb.utils.contains("MACHINE_FEATURES", "transcoding", "streamproxy", "", d)} \
+	libcrypto-compat \
 	libxcrypt-compat \
 	dvb-usb-drivers-meta \
 	cdtextinfo \
