@@ -67,6 +67,7 @@ OPTIONAL_PACKAGES += " \
 	cronie \
 	ctorrent \
 	cups \
+	davfs2 \
 	diffutils \
 	djmount \
 	dosfstools \
