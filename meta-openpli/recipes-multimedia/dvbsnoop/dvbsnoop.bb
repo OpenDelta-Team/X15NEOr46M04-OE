@@ -11,6 +11,8 @@ PV = "1.4.55"
 PKGV = "1.4.55+git${GITPKGV}"
 
 SRC_ORIGIN ?= "git://github.com/OpenVisionE2/dvbsnoop.git;protocol=https;branch=master"
-SRC_URI := "${SRC_ORIGIN} "
+SRC_URI := "${SRC_ORIGIN} file://fix-build-with-gcc15.patch"
 
 inherit autotools
+
+CFLAGS += "-Wno-error=incompatible-pointer-types"

@@ -73,6 +73,7 @@ OPTIONAL_PACKAGES += " \
 	dosfstools \
 	dvb-apps \
 	dvblast \
+	dvbsnoop \
 	dvdfs \
 	edid-decode \
 	evtest \
