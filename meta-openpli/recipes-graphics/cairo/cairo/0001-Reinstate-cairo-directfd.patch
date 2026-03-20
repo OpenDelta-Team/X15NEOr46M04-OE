@@ -374,7 +374,7 @@ index 000000000..0deedf0d5
 +#include <direct/memcpy.h>
 +#include <direct/util.h>
 +
-+slim_hidden_proto(cairo_directfb_surface_create);
++// slim_hidden_proto(cairo_directfb_surface_create);
 +
 +typedef struct _cairo_dfb_surface {
 +    cairo_image_surface_t image;
@@ -863,7 +863,7 @@ index 000000000..0deedf0d5
 +
 +    return &surface->image.base;
 +}
-+slim_hidden_def(cairo_directfb_surface_create);
++// slim_hidden_def(cairo_directfb_surface_create);
 diff --git a/src/cairo-directfb.h b/src/cairo-directfb.h
 new file mode 100644
 index 000000000..e3d818c66
