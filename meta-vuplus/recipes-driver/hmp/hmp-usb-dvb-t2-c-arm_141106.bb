@@ -59,13 +59,12 @@ SRC_URI = "file://media_build-bst-14-${SRCDATE}.tar.gz \
            file://vu_backport.patch \
            file://defconfig \
            file://sit2_op.o_${SRCDATE_BIN}_arm \
+           file://port-to-c23.patch \
 "
 
 S = "${UNPACKDIR}/media_build-bst-14"
 
 EXTRA_OEMAKE = "LINUX_SRC=${STAGING_KERNEL_DIR} OUTDIR=${STAGING_KERNEL_BUILDDIR}"
-
-export KCFLAGS += "-std=gnu17"
 
 do_configure:prepend() {
 	CUR=`pwd`
