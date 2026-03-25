@@ -8,6 +8,8 @@ SRCDATE = "20170801"
 
 SRC_URI = "http://downloads.openpli.org/archive/qviart/vmlinuz-initrd_${MACHINE}_${SRCDATE}.tar.gz"
 
+S = "${UNPACKDIR}"
+
 FILES:${PN} = "/boot"
 
 INHIBIT_PACKAGE_STRIP = "1"
