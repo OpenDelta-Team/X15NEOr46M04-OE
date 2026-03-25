@@ -27,7 +27,7 @@ do_populate_sysroot() {
 
 do_install() {
     install -d ${D}/lib/modules/${KV}/extra
-    cp -Rf ${WORKDIR}/lib/modules/${KV}/extra/*.ko ${D}/lib/modules/${KV}/extra/
+    cp -Rf ${UNPACKDIR}/lib/modules/${KV}/extra/*.ko ${D}/lib/modules/${KV}/extra/
 }
 
 FILES:${PN} += "/lib/modules/${KV}/extra"

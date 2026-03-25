@@ -13,7 +13,7 @@ inherit kernel machine_kernel_pr
 SRC_URI[md5sum] = "421fa4f796f8ca74b300672cff0d3074"
 SRC_URI[sha256sum] = "cff81e142d078688cb861068d21cf8cf70fd9754c710a363dd130e0e0b56ab0c"
 
-LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${KV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
+LIC_FILES_CHKSUM = "file://${UNPACKDIR}/linux-${KV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
 SRC_URI += "http://downloads.openpli.org/archive/qviart/qviart-linux-${KV}-${SRCDATE}.tar.gz \
     file://defconfig \
@@ -23,7 +23,7 @@ SRC_URI += "http://downloads.openpli.org/archive/qviart/qviart-linux-${KV}-${SRC
     file://fix-build-with-binutils-2.41.patch \
     "
 
-S = "${WORKDIR}/linux-${KV}"
+S = "${UNPACKDIR}/linux-${KV}"
 
 export OS = "Linux"
 KERNEL_OBJECT_SUFFIX = "ko"

@@ -21,5 +21,5 @@ do_compile() {
 
 do_install() {
     install -d ${D}/etc/init.d/
-    install -m 0755 ${WORKDIR}/qviart-libreader-hisi3798mv200.sh ${D}/etc/init.d/qviart-libreader
+    install -m 0755 ${UNPACKDIR}/qviart-libreader-hisi3798mv200.sh ${D}/etc/init.d/qviart-libreader
 }

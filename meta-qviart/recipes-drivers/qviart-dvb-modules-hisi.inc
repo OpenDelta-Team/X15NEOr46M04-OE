@@ -10,7 +10,7 @@ PR = "r1"
 SRC_URI = "http://downloads.openpli.org/archive/qviart/${MACHINE}-hiko-${SRCDATE}.tar.gz \
 	file://modules"
 
-S = "${WORKDIR}/lib/modules/${KV}/extra"
+S = "${UNPACKDIR}/lib/modules/${KV}/extra"
 
 INHIBIT_PACKAGE_STRIP = "1"
 
@@ -29,5 +29,5 @@ do_install() {
     install -m 0644 ${S}/*.ko ${D}/lib/modules/${KV}/extra
     install -m 0755  ${S}/load ${D}/lib/modules/${KV}/extra
     install -d ${D}/${sysconfdir}/modules-load.d
-    install -m 0644 ${WORKDIR}/modules ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
+    install -m 0644 ${UNPACKDIR}/modules ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
 }

@@ -31,7 +31,7 @@ do_install() {
     install -m 0644 ${S}/fastboot.bin ${D}/usr/share/fastboot.bin
     install -m 0644 ${S}/bootargs.bin ${D}/usr/share/bootargs.bin
     install -m 0755 -d ${D}${sysconfdir}/init.d
-    install -m 0755 ${WORKDIR}/flash-updater ${D}${sysconfdir}/init.d/flash-updater
+    install -m 0755 ${UNPACKDIR}/flash-updater ${D}${sysconfdir}/init.d/flash-updater
     install -m 0755 ${S}/apploader.bin ${DEPLOY_DIR_IMAGE}/apploader.bin
 }
 

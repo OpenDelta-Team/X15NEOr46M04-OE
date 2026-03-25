@@ -17,9 +17,9 @@ S = "${UNPACKDIR}"
 
 do_install() {
     install -d ${D}/etc/init.d/
-    install -m 0755 ${WORKDIR}/hisi3798mv200-shutdown.sh ${D}/etc/init.d/hisi3798mv200-shutdown
+    install -m 0755 ${UNPACKDIR}/hisi3798mv200-shutdown.sh ${D}/etc/init.d/hisi3798mv200-shutdown
     install -d ${D}/usr/bin
-    install -m 0755 ${WORKDIR}/turnoff_power ${D}/usr/bin
+    install -m 0755 ${UNPACKDIR}/turnoff_power ${D}/usr/bin
 }
 
 pkg_preinst:${PN}:prepend() {

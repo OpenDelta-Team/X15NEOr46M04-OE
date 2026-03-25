@@ -29,7 +29,7 @@ SRC_URI:append:lunixco = " \
 inherit deploy
 
 do_deploy() {
-	install -m 0644 ${WORKDIR}/*.bmp ${DEPLOYDIR}/
+	install -m 0644 ${UNPACKDIR}/*.bmp ${DEPLOYDIR}/
 }
 
 addtask deploy before do_build after do_install

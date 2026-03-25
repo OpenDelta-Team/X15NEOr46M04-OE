@@ -19,7 +19,7 @@ FILES_SOLIBSDEV = ""
 
 SRC_URI = "http://downloads.openpli.org/archive/qviart/hisi3798mv200-hilib-${SRCDATE}.tar.gz"
 
-S = "${WORKDIR}/hilib"
+S = "${UNPACKDIR}/hilib"
 
 do_configure() {
 }

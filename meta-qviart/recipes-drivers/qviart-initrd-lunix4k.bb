@@ -4,7 +4,7 @@ require qviart-initrd.inc
 
 do_install() {
     install -d ${D}/boot
-    install -m 0755 ${WORKDIR}/vmlinuz-initrd-7260a0 ${D}/boot/initrd_run.bin
+    install -m 0755 ${UNPACKDIR}/vmlinuz-initrd-7260a0 ${D}/boot/initrd_run.bin
 }
 
 SRC_URI[md5sum] = "a5379eecc112ed35b6a5a798987df74c"

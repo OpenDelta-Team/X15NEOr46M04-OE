@@ -21,5 +21,5 @@ do_compile() {
 
 do_install() {
     install -d ${D}/etc/init.d/
-    install -m 0755 ${WORKDIR}/qviart-loadmodules-hisi3798mv200.sh ${D}/etc/init.d/qviart-loadmodules
+    install -m 0755 ${UNPACKDIR}/qviart-loadmodules-hisi3798mv200.sh ${D}/etc/init.d/qviart-loadmodules
 }

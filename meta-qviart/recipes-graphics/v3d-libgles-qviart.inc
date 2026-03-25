@@ -8,7 +8,7 @@ PROVIDES = "virtual/libgles2 virtual/egl"
 
 SRC_URI = "http://downloads.openpli.org/archive/qviart/libgles-arm-${SRCDATE}.tar.gz"
 
-S = "${WORKDIR}/libgles"
+S = "${UNPACKDIR}/libgles"
 
 do_configure() {
 }
