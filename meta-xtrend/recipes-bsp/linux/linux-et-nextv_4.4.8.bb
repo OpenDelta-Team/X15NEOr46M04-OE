@@ -29,6 +29,7 @@ SRC_URI += "http://downloads.openpli.org/archive/xtrend/xtrend-linux-4.4.8-20160
 	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
 	file://0003-dont-mark-register-as-const.patch \
 	file://fix-build-with-binutils-2.41.patch \
+	file://port-to-c23-kernel-4-4-8.patch \
 	"
 
 S = "${UNPACKDIR}/linux-${PV}"
